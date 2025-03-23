@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^18.0.6",
     "axios": "^1.8.4",
-    "daiki-fca": "^0.0.1"
+    "daiki-fca": "^0.0.1",
+    "express": "^4.21.2"
   }
 }
