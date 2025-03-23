@@ -2,6 +2,18 @@ const login = require('daiki-fca');
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+const express = require('express');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.json('pogi ko');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 if (!process.env.APPSTATE || !process.env.GEMINI_API_KEY) {
   throw new Error('Missing required environment variables: APPSTATE or GEMINI_API_KEY');
